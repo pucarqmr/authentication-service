@@ -2,6 +2,8 @@ package com.pos.pucminas.sgm.config;
 
 import javax.servlet.http.HttpServletResponse;
 
+import com.pos.pucminas.sgm.security.JwtAuthenticationConfig;
+import com.pos.pucminas.sgm.security.JwtUsernamePasswordAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,9 +16,6 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.pos.pucminas.sgm.security.common.JwtAuthenticationConfig;
-import com.pos.pucminas.sgm.security.common.JwtUsernamePasswordAuthenticationFilter;
-
 /**
  * Config login authentication.
  *
@@ -25,7 +24,8 @@ import com.pos.pucminas.sgm.security.common.JwtUsernamePasswordAuthenticationFil
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired JwtAuthenticationConfig config;
+    @Autowired
+    JwtAuthenticationConfig config;
 
     @Bean
     public JwtAuthenticationConfig jwtConfig() {
