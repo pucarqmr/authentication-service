@@ -45,6 +45,16 @@
 			<version>0.0.1-SNAPSHOT</version>
         </dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>jwt-commons</id>
+			<url>https://github.com/pucarqmr/jwt-commons</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

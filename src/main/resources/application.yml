@@ -22,7 +22,7 @@ eureka:
       enabled: true
     serviceUrl:
       defaultZone: https://sgim-eureka-service.herokuapp.com/
-    
+
 hystrix:
   command:
     default:
