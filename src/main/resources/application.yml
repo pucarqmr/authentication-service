@@ -21,7 +21,7 @@ eureka:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: https://sgim-eureka-service.herokuapp.com/
+      defaultZone: https://sgim-eureka-service.herokuapp.com/eureka/
 
 hystrix:
   command:
