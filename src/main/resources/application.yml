@@ -17,11 +17,13 @@ spring:
 #    leaseExpirationDurationInSeconds: 2
 
 eureka:
+  instance:
+    hostname: microservice.herokuapp.com
+    homePageUrl: https://${eureka.instance.hostName}/
+    home-page-url-path: https://${eureka.instance.hostName}
   client:
-    healthcheck:
-      enabled: true
     serviceUrl:
-      defaultZone: https://sgim-eureka-service.herokuapp.com/eureka/
+      defaultZone: http://eureka.herokuapp.com/eureka/
 
 hystrix:
   command:
