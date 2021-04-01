@@ -18,7 +18,7 @@ spring:
 
 eureka:
   instance:
-    hostname: microservice.herokuapp.com
+    hostname: authentication-service.herokuapp.com
     homePageUrl: https://${eureka.instance.hostName}/
     home-page-url-path: https://${eureka.instance.hostName}
   client:
